@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+   *
+   {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+   }
+   body
+   {
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   nav
+   {
+    background-color: #EAEDED;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    
+   
+
+   }
+   label.logo
+   {
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0px 100px;
+   }
+  
+   nav ul li
+   {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 7px;
+   }
+   nav ul li a{
+    color: black;
+   }
+   nav ul i
+   {
+    margin:0px 10px;
+   }
+    .checkbtn
+    {
+        font-size: 30px;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check
+    {
+        display: none;
+    }
+    @media (max-width: 952px)
+{
+label.logo{
+    font-size: 30px;
+    padding-left: 180px;
+}
+nav ul li a {
+    font-size: 16px;
+}
+}
+@media (max-width: 858px)
+{
+    .checkbtn{
+        display: block;
+    }
+    ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        top: 80px;
+        left: -100;
+        text-align: center;
+    }
+    nav ul li
+    {
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul
+    {
+        left: 0;
+    }
+}
+.sub-nav
+{
+    background-color: #EAEDED;
+    height: 50px;
+    width: 100%; 
+    text-align: center;
+    font-size: 15px;
+}
+.main
+{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    background-size: cover;
+  
+
+}
+.image
+{
+    height: 400px;
+    flex-wrap: wrap;
+    
+}
+@media (max-width: 952px)
+{
+    .image{
+        height: 200px;
+        flex-wrap: wrap;
+    }
+}
+.main h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 50px;
+}
+.main h3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top:10px; 
+}
+.main a
+{
+    color: #3498DB;
+   
+}
+.main h4
+{
+    padding-top: 10px;
+    
+}
+.next
+{
+    height: 600px;
+    width: 100%;
+    text-align: center;
+
+}
+.next h1
+{
+    padding-top: 50px;
+}
+.next a
+{
+    color: #3498DB;
+   
+}
+.next h4
+{
+    padding-top: 10px;
+    
+}
+.image2
+{
+    
+    height: 350px;
+    flex-wrap: wrap;
+    
+}
+@media (max-width: 952px)
+{
+    .image2
+    {
+        height: 300px;
+        margin: 50px -50px;
+        flex-wrap: wrap;
+    }
+}
+.next2
+{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+.next2 h1
+{
+    font-size: 50px;
+    color: white;
+    padding-top: 50px;
+}
+.next2 a
+{
+    color: white;
+    color: #3498DB;
+   
+}
+.next2 h3
+{
+   
+    padding-left: 10px;
+    color: red;
+}
+.next2 h4
+{
+    padding-top: 10px;
+    
+}
+.image3
+{
+    
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    
+}
+@media (max-width: 952px)
+{
+    .image3
+    {
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 40px;
+    flex-wrap: wrap; 
+    }
+}
+
+.flexbox
+{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+.box1
+{
+    /* border:double 1px; */
+    height: 400px;
+    width: 50%;
+}
+.flexbox h1
+{
+    font-size: 50px;
+    padding-top: 30px;
+}
+.flexbox h3
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#EB984E;
+    padding-left: 40px;
+    
+}
+.flexbox h4
+{
+    padding-left: 50px;
+}
+.image4
+{
+    height: 200px;
+    width: 50%;
+    margin-top: 45px;
+}
+.image5
+{
+    height: 200px;
+   
+    margin-top: 20px;
+}
+@media (max-width: 952px)
+{
+    .image5
+    {
+        height: 130px;
+    }
+}
+
+.image6
+{
+    height: 100%;
+    width: 95%;
+
+    flex-wrap: wrap;
+   
+}
+.flexbox h2
+{
+    color: white;
+    position: absolute;
+    top: 2350px;
+    left:100px;
+    flex-wrap: wrap;
+}
+@media (max-width: 952px)
+{
+    .flexbox h2
+    {
+        font-size: 20px;
+        position: absolute;
+        left: 20px;
+    }
+}
+.flexbox h5
+{
+    color: white;
+    position: absolute;
+    top: 2390px;
+    left:74px;
+    flex-wrap: wrap;
+}
+@media (max-width: 952px)
+{
+    .flexbox h5
+    {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 2380px;
+    left:15px;
+    flex-wrap: wrap;
+    } 
+}
+.shop-iphone
+{
+    position: absolute;
+    top: 2450px;
+    left: 170px;
+    color: #18DEE7 ;
+    flex-wrap: wrap;
+}
+@media (max-width: 952px)
+{
+    .shop-iphone
+    {
+    position: absolute;
+    top: 2450px;
+    left: 80px;
+    color: #18DEE7 ; 
+    flex-wrap: wrap;
+    }
+}
+.image7
+{
+    height: 100%;
+    width:95%
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+      
+        <ul>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo"><i class="fa-brands fa-apple"></i></label>
+            <li><a href="#" class="active">Store</a></li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">AirPods</a></li>
+            <li><a href="#">TV & Home</a></li>
+            <li><a href="#">Entertainmen</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Support</a></li>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </ul>
+    </nav> 
+    <div class="sub-nav">
+<span>Save on Mac or iPad with education pricing and get a gift card up to $150. Gift card offer ends October 2.<sup>1</span> <a href="#" class="link">Shop now ></a>
+    </div>  
+    <div class="main">
+        <h1>iPhone 12 pro</h1>
+        <h3>Titanium. So strong. So light. So pro</h3>
+      <h4><a href="#">Learn more ></a></h4>
+      <h4><a href="#">Buy ></a></h4>
+<img src="i12 prp.png" alt="" class="image">
+    </div>  
+    <div class="next">
+        <h1>iPhone 12 pro</h1>
+        <h3>New camera. New design. Newphoria</h3>
+      <h4><a href="#">Learn more ></a></h4>
+      <h4><a href="#">Buy ></a></h4>
+      <img src="camera (2).png" alt="" class="image2">
+    </div>
+    <div class="next2">
+        <h1><i class="fa-brands fa-apple"></i> Watch</h1>
+        <h3>SERIES 9</h3>
+      <h4><a href="#">Learn more ></a></h4>
+      <h4><a href="#">Buy ></a></h4>
+      <img src="apple watch.png" alt="" class="image3">
+    </div>
+    <div class="flexbox">
+        <div class="box1" id="box-">
+            <h1><i class="fa-brands fa-apple"></i> Watch</h1>
+            <h3>ULTRA 2</h3>
+            <h4><a href="#">Learn more ></a></h4>
+            <h4><a href="#">Buy ></a></h4>
+      <img src="ultra watch.png" alt="" class="image4">
+        </div>
+        <div class="box1" id="box-">
+             <h1><i class="fa-brands fa-canadian-maple-leaf"></i> Carbon Neutral</h1>
+            <h3>A first for Apple Watch.</h3>
+            <h4><a href="#">Learn more ></a></h4>
+            <h4><a href="#">Buy ></a></h4>
+            <img src="1st wtch.png" alt="" class="image5">
+
+        </div>
+        <div class="box1" id="box-">
+            
+<img src="child.jpg.crdownload" alt="" class="image6">
+        <h2>Shop iPhone with us</h2>
+        <h5>Save with trade-in, connct to your carrier, and<br> transfer your data, all right here at Apple</h5>
+        <a href="#" class="shop-iphone"><strong>Shop iPhone ></strong> </a>
+        </div>
+        <div class="box1" id="box-">
+<img src="iphoneeeeeeee.jpg" alt="" class="image7">
+        </div>
+        <div class="box1" id="box-">
+
+        </div>
+        <div class="box1" id="box-">
+
+        </div>
+    </div>
+   
+</body>
+</html>
